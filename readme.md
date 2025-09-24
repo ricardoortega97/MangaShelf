@@ -1,10 +1,10 @@
-# WEB103 Project 1 - *Name of App Here*
+# WEB103 Project 1 - *MangaShelf*
 
-Submitted by: **Your name here**
+Submitted by: **Ricardo Ortega Pacheco**
 
-About this web app: **App description here**
+About this web app: **MangaShelf is a simple web application that let users browse a curated list of manga titles I recommend, view detailed information about each manga, and explore their attributes with Picocss**
 
-Time spent: **X** hours
+Time spent: **8** hours
 
 ## Required Features
 
@@ -18,7 +18,7 @@ The following **required** functionality is completed:
   - [x] **Each detail view should be a unique endpoint, such as as `localhost:3000/bosses/crystalguardian` and `localhost:3000/mantislords`**
   - [x] *Note: When showing this feature in the video walkthrough, please show the unique URL for each detailed view. We will not be able to give points if we cannot see the implementation* 
 - [ ] **The web app serves an appropriate 404 page when no matching route is defined**
-- [ x] **The web app is styled using Picocss**
+- [x] **The web app is styled using Picocss**
 
 The following **optional** features are implemented:
 
@@ -34,15 +34,13 @@ The following **additional** features are implemented:
 
 Here's a walkthrough of implemented required features:
 
-<img src='http://i.imgur.com/link/to/your/gif/file.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' />
+<img src='https://i.imgur.com/HhYn1qz.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' />
 
 <!-- Replace this with whatever GIF tool you used! -->
-GIF created with ...  Add GIF tool here
-<!-- Recommended tools:
-[Kap](https://getkap.co/) for macOS
-[ScreenToGif](https://www.screentogif.com/) for Windows
-[peek](https://github.com/phw/peek) for Linux. -->
+GIF created with ...  LICEcap
 
 ## Notes
 
 Describe any challenges encountered while building the app or any additional context you'd like to add.
+
+Implementing the feature and Picocss. 404 error not working will look into it more... 
