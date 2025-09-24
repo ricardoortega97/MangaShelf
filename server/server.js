@@ -1,4 +1,5 @@
 import express from 'express';
+import mangaRouter from './routes/manga.js';
 
 const app = express();
 const PORT = process.env.PORT || 3001;
@@ -14,3 +15,5 @@ app.get('/', (req, res) => {
 app.listen(PORT, () => {
     console.log(`🚀 Server listening on http://localhost:${PORT}`)
 });
+
+app.use('/manga', mangaRouter);
