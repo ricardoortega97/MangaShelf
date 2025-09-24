@@ -3,7 +3,6 @@ const renderManga = async () => {
     const data = await response.json();
 
     const mainContent = document.getElementById('main-content');
-    if (!mainContent) return;
 
     if (data) {
         data.map(manga => {
@@ -53,7 +52,6 @@ const renderMangaDetails = async () => {
     const data = await response.json();
 
     const mangaContext = document.getElementById('manga-context');
-    if (!mangaContext) return;
 
     let manga
 

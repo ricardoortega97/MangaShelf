@@ -1,6 +1,7 @@
+import { v4 as uuidv4 } from 'uuid';
 const managaData = [
     {
-        id: 1,
+        id: uuidv4(),
         title: "Jojo's Bizarre Adventure Part 3: Stardust Crusaders",
         author: "Hirohiko Araki",
         genre: "Action, Adventure, Supernatural",
@@ -9,7 +10,7 @@ const managaData = [
         coverImage: "https://m.media-amazon.com/images/I/813Dnv0RHTL._SY522_.jpg",
     },
     {
-        id: 2,
+        id: uuidv4(),
         title: "Gintama",
         author: "Hideaki Sorachi",
         genre: "Action, Comedy, Sci-Fi",
@@ -18,16 +19,16 @@ const managaData = [
         coverImage: "https://m.media-amazon.com/images/I/61sAh9ooL9L._SY522_.jpg",
     },
     {
-        id: 3,
+        id: uuidv4(),
         title: "Horimiya",
         author: "HERO",
         genre: "Romance, Slice of Life",
         vols: 16,
         description: "A high school romance about the popular and seemingly perfect Kyoko Hori and the quiet, gloomy Izumi Miyamura, who discover each other's secret, more complex sides after a chance encounter",
-        coverImage: "https://m.media-amazon.com/images/I/81b0rYk+TLL._SY550_.jpg",
+        coverImage: "https://m.media-amazon.com/images/I/41my6wDQ0iL._SY445_SX342_FMwebp_.jpg",
     },
     {
-        id: 4,
+        id: uuidv4(),
         title: "D.Gray-man",
         author: "Katsura Hoshino",
         genre: "Action, Supernatural, Dark Fantasy",
@@ -36,7 +37,7 @@ const managaData = [
         coverImage: "https://m.media-amazon.com/images/I/91Gy3rv3fML._SY522_.jpg",
     },
     {
-        id: 5,
+        id: uuidv4(),
         title: "Wotakoi: Love is Hard for Otaku",
         author: "Fujita",
         genre: "Romance, Comedy, Slice of Life",
