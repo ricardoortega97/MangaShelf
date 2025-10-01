@@ -3,6 +3,7 @@ const renderManga = async () => {
     const data = await response.json();
 
     const mainContent = document.getElementById('main-content');
+    if (!mainContent) return;
 
     if (data) {
         data.map(manga => {
@@ -14,7 +15,7 @@ const renderManga = async () => {
             mangaLink.className = 'manga-link';
             
             const mangaImg = document.createElement('img');
-            mangaImg.src = manga.coverImage;
+            mangaImg.src = manga.coverimage;
             mangaImg.alt = "Cover image of " + manga.title;
             mangaImg.className = 'manga-cover';
             
@@ -46,19 +47,20 @@ const renderManga = async () => {
 renderManga();
 
 const renderMangaDetails = async () => {
-    const request_id = window.location.href.split('/').pop();
+    const request_id = parseInt(window.location.href.split('/').pop());
     
     const response = await fetch('/manga');
     const data = await response.json();
 
     const mangaContext = document.getElementById('manga-context');
+    if (!mangaContext) return;
 
     let manga
 
     manga = data.find(manga => manga.id === request_id);
 
     if (manga) {
-        document.getElementById('manga-cover').src = manga.coverImage;
+        document.getElementById('manga-cover').src = manga.coverimage;
         document.getElementById('manga-title').textContent = manga.title;
         document.getElementById('manga-author').textContent = `Author: ${manga.author}`;
         document.getElementById('manga-genre').textContent = `Genre: ${manga.genre}`;

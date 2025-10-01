@@ -12,7 +12,7 @@ const createMangaTable = async () => {
             genre VARCHAR(100) NOT NULL,
             vols INT,
             description TEXT,
-            coverImage TEXT,
+            coverimage TEXT,
             isbn VARCHAR(13) NOT NULL UNIQUE
         );`;
     try {
@@ -41,7 +41,7 @@ const seedMangaData = async () => {
                 
                 // Insert new manga
                 const insertQuery = `
-                    INSERT INTO manga (title, author, genre, vols, description, coverImage, isbn)
+                    INSERT INTO manga (title, author, genre, vols, description, coverimage, isbn)
                 VALUES ($1, $2, $3, $4, $5, $6, $7)
                 `;
                 const values = [
@@ -50,7 +50,7 @@ const seedMangaData = async () => {
                     manga.genre,
                     manga.vols,
                     manga.description,
-                    manga.coverImage,
+                    manga.coverimage,
                     manga.isbn10
                 ];
                 

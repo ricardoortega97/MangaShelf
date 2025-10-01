@@ -1,3 +1,4 @@
+import dotenv from './config/dotenv.js';
 import express from 'express';
 import mangaRouter from './routes/manga.js';
 
